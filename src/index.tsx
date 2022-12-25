@@ -241,7 +241,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
           onChange={(value: boolean) => {
             if (value) {
               set_value(CLOCK_MIN_CPU, 1400);
-              set_value(CLOCK_MAX_CPU, 3500);
+              set_value(CLOCK_MAX_CPU, 4700);
               reloadGUI("CPUFreqToggle");
             } else {
               set_value(CLOCK_MIN_CPU, null);
@@ -260,7 +260,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
         {get_value(CLOCK_MIN_CPU) != null && <SliderField
           label="Minimum (MHz)"
           value={get_value(CLOCK_MIN_CPU)}
-          max={3500}
+          max={4700}
           min={1400}
           step={100}
           showValue={true}
@@ -289,7 +289,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
         {get_value(CLOCK_MAX_CPU) != null && <SliderField
           label="Maximum (MHz)"
           value={get_value(CLOCK_MAX_CPU)}
-          max={3500}
+          max={4700}
           min={500}
           step={100}
           showValue={true}
@@ -393,7 +393,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
           onChange={(value: boolean) => {
             if (value) {
               set_value(CLOCK_MIN_GPU, 200);
-              set_value(CLOCK_MAX_GPU, 1600);
+              set_value(CLOCK_MAX_GPU, 2200);
               reloadGUI("GPUFreqToggle");
             } else {
               set_value(CLOCK_MIN_GPU, null);
@@ -409,7 +409,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
         { get_value(CLOCK_MIN_GPU) != null && <SliderField
           label="Minimum (MHz)"
           value={get_value(CLOCK_MIN_GPU)}
-          max={1600}
+          max={2200}
           min={200}
           step={100}
           showValue={true}
@@ -432,7 +432,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
         {get_value(CLOCK_MAX_GPU) != null && <SliderField
           label="Maximum (MHz)"
           value={get_value(CLOCK_MAX_GPU)}
-          max={1600}
+          max={2200}
           min={200}
           step={100}
           showValue={true}
